@@ -3,12 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Image-Classification-App-with-Teachable-Machine-main/Image-Classification-App-with-Teachable-Machine-main/app/src/main/res/drawable/bg_home.xml" value="0.2165" />
-        <entry key="..\:/Image-Classification-App-with-Teachable-Machine-main/Image-Classification-App-with-Teachable-Machine-main/app/src/main/res/drawable/bg_shape.xml" value="0.2165" />
-        <entry key="..\:/Image-Classification-App-with-Teachable-Machine-main/Image-Classification-App-with-Teachable-Machine-main/app/src/main/res/font/.xml" value="0.23958333333333334" />
-        <entry key="..\:/Image-Classification-App-with-Teachable-Machine-main/Image-Classification-App-with-Teachable-Machine-main/app/src/main/res/layout/activity_image.xml" value="0.22" />
-        <entry key="..\:/Image-Classification-App-with-Teachable-Machine-main/Image-Classification-App-with-Teachable-Machine-main/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Image-Classification-App-with-Teachable-Machine-main/Image-Classification-App-with-Teachable-Machine-main/app/src/main/res/layout/activity_splash.xml" value="0.209375" />
+        <entry key="..\:/ImageClassifier-1/ImageClassifier/app/src/main/res/drawable/bg1.xml" value="0.22552083333333334" />
+        <entry key="..\:/ImageClassifier-1/ImageClassifier/app/src/main/res/drawable/bg2.xml" value="0.22552083333333334" />
+        <entry key="..\:/ImageClassifier-1/ImageClassifier/app/src/main/res/drawable/bg3.xml" value="0.22552083333333334" />
+        <entry key="..\:/ImageClassifier-1/ImageClassifier/app/src/main/res/layout/activity_intro.xml" value="0.209375" />
+        <entry key="..\:/ImageClassifier-1/ImageClassifier/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/ImageClassifier/app/src/main/res/layout/activity_intro.xml" value="0.209375" />
+        <entry key="..\:/ImageClassifier/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/sahil/AndroidStudioProjects/ImageClassifier/app/src/main/res/layout/activity_main.xml" value="0.2552083333333333" />
       </map>
     </option>
   </component>
