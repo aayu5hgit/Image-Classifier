@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -32,8 +33,9 @@ import app.ij.mlwithtensorflowlite.ml.Model;
 public class MainActivity extends AppCompatActivity {
 
     TextView result, confidence;
-    ImageView imageView;
-    Button picture;
+    ImageView imageView, backbtn;
+
+    Button picture, prob;
     int imageSize = 224;
     Window window;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -53,12 +55,32 @@ public class MainActivity extends AppCompatActivity {
         confidence = findViewById(R.id.confidence);
         imageView = findViewById(R.id.imageView);
         picture = findViewById(R.id.button);
+        prob = findViewById(R.id.probbutton);
+        backbtn = findViewById(R.id.backbtn);
+
 
         //STATUS BAR COLOR:
         if (Build.VERSION.SDK_INT >= 15) {
             window = this.getWindow();
             window.setStatusBarColor(this.getResources().getColor(R.color.slip));
         }
+
+
+        prob.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), ProbabilityActivity.class);
+                startActivity(i);
+            }
+        });
+
+        backbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent j = new Intent(getApplicationContext(), SplashActivity.class);
+                startActivity(j);
+            }
+        });
 
         picture.setOnClickListener(new View.OnClickListener() {
             @Override
