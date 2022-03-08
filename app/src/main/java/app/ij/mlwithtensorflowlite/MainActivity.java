@@ -35,12 +35,14 @@ public class MainActivity extends AppCompatActivity {
     ImageView imageView;
     Button picture;
     int imageSize = 224;
-
+    Window window;
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
 //        //        REMOVE TITLE SLIP
 //        requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -52,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
         imageView = findViewById(R.id.imageView);
         picture = findViewById(R.id.button);
 
+        //STATUS BAR COLOR:
+        if (Build.VERSION.SDK_INT >= 15) {
+            window = this.getWindow();
+            window.setStatusBarColor(this.getResources().getColor(R.color.slip));
+        }
 
         picture.setOnClickListener(new View.OnClickListener() {
             @Override

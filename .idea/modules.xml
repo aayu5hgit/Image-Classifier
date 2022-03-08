@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Image_Classifier.iml" filepath="$PROJECT_DIR$/.idea/modules/Image_Classifier.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Image_Classifier.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Image_Classifier.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ML_with_TensorFlowLite.iml" filepath="$PROJECT_DIR$/.idea/modules/ML_with_TensorFlowLite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ML_with_TensorFlowLite.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ML_with_TensorFlowLite.app.iml" />
     </modules>
   </component>
 </project>

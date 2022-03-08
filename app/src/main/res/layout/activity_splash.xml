@@ -4,53 +4,104 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DBDADB"
+    android:background="@drawable/background"
     tools:context=".SplashActivity">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:context=".SplashActivity"
-            tools:layout_editor_absoluteX="-67dp">
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            tools:context=".SplashActivity"-->
+<!--            tools:layout_editor_absoluteX="-67dp">-->
 
-            <com.scwang.wave.MultiWaveHeader
-                android:id="@+id/wave_header"
-                android:layout_width="match_parent"
-                android:layout_height="500dp" />
+<!--            <com.scwang.wave.MultiWaveHeader-->
+<!--                android:id="@+id/wave_header"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="500dp" />-->
 
-        </RelativeLayout>
+<!--        </RelativeLayout>-->
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie"
-        android:layout_width="wrap_content"
-        android:layout_height="280dp"
+        android:layout_width="372dp"
+        android:layout_height="251dp"
         app:layout_constraintBaseline_toBottomOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.589"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.391"
+        app:layout_constraintVertical_bias="0.127"
         app:lottie_autoPlay="true"
+        app:lottie_repeatCount="15"
         app:lottie_rawRes="@raw/phonegif" />
 
     <TextView
         android:id="@+id/name"
-        android:layout_width="345dp"
-        android:layout_height="123dp"
-        android:fontFamily="@font/galada"
+        android:layout_width="216dp"
+        android:layout_height="126dp"
+        android:fontFamily="@font/bree_serif"
         android:gravity="center"
-        android:text="Image Classifier"
+        android:text="IMAGE CLASSIFIER"
         android:textAlignment="center"
-        android:textColor="#D140D1"
+        android:textColor="#6662DD"
         android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottie"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="212dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:gravity="center"
+        android:text="Know the unknown!"
+        android:textAlignment="center"
+        android:textColor="#7D3EBC"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottie"
+        app:layout_constraintVertical_bias="0.474" />
+
+    <ImageButton
+        android:id="@+id/start"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:gravity="center"
+        android:src="@drawable/start1"
+        android:text="Group 25"
+        android:textAlignment="center"
+        android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lottie"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.911" />
+
+    <TextView
+        android:id="@+id/lets_start"
+        android:layout_width="64dp"
+        android:layout_height="19dp"
+        android:fontFamily="@font/bree_serif"
+        android:gravity="center"
+        android:text="Let's Start"
+        android:textAlignment="center"
+        android:textColor="#8A47CD"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottie"
+        app:layout_constraintVertical_bias="0.77" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

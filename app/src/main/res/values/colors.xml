@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
+    <color name="purple_500">#9A5BF3</color>
+    <color name="purple_700">#9731BC</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="introbg">#DBDADB</color>
+    <color name="slip">#00C8C8C8</color>
+    //onboarding colors
+    <color name="background">#F0F4F3</color>
+    <color name="buttontext">#50C2C9</color>
+
+    //indicator color
+    <color name="inactive">#C4C4C4</color>
+    <color name="active">#50C2C9</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#10101C</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="blackNavy">#10101C</color>
+    <color name="next_1">#8B88DC</color>
+    <color name="next_2">#0183C5</color>
+    <color name="next_3">#2F6DFF</color>
+    <color name="next_4">#5FA091</color>
+    <color name="dark_navy">#0E2132</color>
+
 </resources>
