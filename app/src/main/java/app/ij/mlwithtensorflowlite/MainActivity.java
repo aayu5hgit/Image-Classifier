@@ -162,6 +162,22 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(k);
                     }
                 });
+            } else if (classes[maxPos] == "Lily"){
+                info.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent l = new Intent(getApplicationContext(), LilyActivity.class);
+                        startActivity(l);
+                    }
+                });
+            } else if (classes[maxPos] == "Daisy"){
+                info.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent m = new Intent(getApplicationContext(), DaisyActivity.class);
+                        startActivity(m);
+                    }
+                });
             }
 
 //            for(int i = 0; i < classes.length; i++){

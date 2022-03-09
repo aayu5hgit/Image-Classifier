@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MLWithTensorFlowLite">
         <activity
+            android:name=".TulipActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DaisyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LilyActivity"
+            android:exported="false" />
+        <activity
             android:name=".SunflowerActivity"
             android:exported="false" />
         <activity

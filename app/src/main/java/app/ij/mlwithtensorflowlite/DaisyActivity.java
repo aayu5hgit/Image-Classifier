@@ -8,18 +8,16 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
-import android.widget.Button;
 import android.widget.ImageButton;
 
-public class SunflowerActivity extends AppCompatActivity {
-
+public class DaisyActivity extends AppCompatActivity {
     ImageButton backbtn;
     Window window;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sunflower);
+        setContentView(R.layout.activity_daisy);
 
         //STATUS BAR COLOR:
         if (Build.VERSION.SDK_INT >= 15) {
