@@ -1,6 +1,8 @@
 
 package app.ij.mlwithtensorflowlite;
 
+import static org.checkerframework.checker.units.UnitsTools.s;
+
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,6 +27,7 @@ import org.tensorflow.lite.DataType;
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
 
 import java.io.IOException;
+import java.net.URL;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
@@ -35,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     TextView result, confidence;
     ImageView imageView, backbtn;
 
-    Button picture, prob;
+    Button picture, prob, info;
     int imageSize = 224;
     Window window;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -57,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         picture = findViewById(R.id.button);
         prob = findViewById(R.id.probbutton);
         backbtn = findViewById(R.id.backbtn);
+        info = findViewById(R.id.infobtn);
 
 
         //STATUS BAR COLOR:
@@ -73,6 +77,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+//
+//        info.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent k = new Intent(getApplicationContext(), SunflowerActivity.class);
+//                startActivity(k);
+//            }
+//        });
 
         backbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -141,10 +153,21 @@ public class MainActivity extends AppCompatActivity {
             result.setText(classes[maxPos]);
 
             String s = "";
-            for(int i = 0; i < classes.length; i++){
-                s += String.format("%s: %.1f%%\n", classes[i], confidences[i] * 100);
+
+            if (classes[maxPos] == "Sunflower"){
+                info.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent k = new Intent(getApplicationContext(), SunflowerActivity.class);
+                        startActivity(k);
+                    }
+                });
             }
-            confidence.setText(s);
+
+//            for(int i = 0; i < classes.length; i++){
+//                s += String.format("%s: %.1f%%\n", classes[i], confidences[i] * 100);
+//            }
+//            confidence.setText(s);
 
 
             // Releases model resources if no longer used.

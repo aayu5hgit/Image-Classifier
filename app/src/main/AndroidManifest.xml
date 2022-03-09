@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MLWithTensorFlowLite">
         <activity
+            android:name=".SunflowerActivity"
+            android:exported="false" />
+        <activity
             android:name=".ProbabilityActivity"
             android:exported="false" />
         <activity
