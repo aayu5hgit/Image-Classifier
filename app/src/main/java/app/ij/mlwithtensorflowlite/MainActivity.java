@@ -18,6 +18,8 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -75,6 +77,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), ProbabilityActivity.class);
                 startActivity(i);
+                Animation animation = AnimationUtils.loadAnimation(MainActivity.this,R.anim.anim);
+                prob.startAnimation(animation);
             }
         });
 //
@@ -98,6 +102,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Launch camera if we have permission
+                Animation animation = AnimationUtils.loadAnimation(MainActivity.this,R.anim.anim);
+                picture.startAnimation(animation);
                 if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
                     Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                     startActivityForResult(cameraIntent, 1);
@@ -160,6 +166,8 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View view) {
                         Intent k = new Intent(getApplicationContext(), SunflowerActivity.class);
                         startActivity(k);
+                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this,R.anim.anim);
+                        info.startAnimation(animation);
                     }
                 });
             } else if (classes[maxPos] == "Lily"){
@@ -168,6 +176,8 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View view) {
                         Intent l = new Intent(getApplicationContext(), LilyActivity.class);
                         startActivity(l);
+                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this,R.anim.anim);
+                        info.startAnimation(animation);
                     }
                 });
             } else if (classes[maxPos] == "Daisy"){
@@ -176,6 +186,18 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View view) {
                         Intent m = new Intent(getApplicationContext(), DaisyActivity.class);
                         startActivity(m);
+                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this,R.anim.anim);
+                        info.startAnimation(animation);
+                    }
+                });
+            }else if (classes[maxPos] == "Tulip"){
+                info.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent m = new Intent(getApplicationContext(),TulipActivity.class);
+                        startActivity(m);
+                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this,R.anim.anim);
+                        info.startAnimation(animation);
                     }
                 });
             }
