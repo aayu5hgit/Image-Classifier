@@ -37,7 +37,7 @@ import app.ij.mlwithtensorflowlite.ml.Model;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView result, confidence;
+    TextView result, confidence, classified;
     ImageView imageView, backbtn;
 
     Button picture, prob, info;
@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
         prob = findViewById(R.id.probbutton);
         backbtn = findViewById(R.id.backbtn);
         info = findViewById(R.id.infobtn);
+        classified = findViewById(R.id.classified);
 
 
         //STATUS BAR COLOR:
@@ -70,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
             window = this.getWindow();
             window.setStatusBarColor(this.getResources().getColor(R.color.slip));
         }
+
 
 
         prob.setOnClickListener(new View.OnClickListener() {
@@ -161,6 +163,8 @@ public class MainActivity extends AppCompatActivity {
             String s = "";
 
             if (classes[maxPos] == "Sunflower"){
+                info.setVisibility(View.VISIBLE);
+                prob.setVisibility(View.VISIBLE);
                 info.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -171,6 +175,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
             } else if (classes[maxPos] == "Lily"){
+                info.setVisibility(View.VISIBLE);
+                prob.setVisibility(View.VISIBLE);
                 info.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -181,6 +187,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
             } else if (classes[maxPos] == "Daisy"){
+                info.setVisibility(View.VISIBLE);
+                prob.setVisibility(View.VISIBLE);
                 info.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -191,6 +199,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
             }else if (classes[maxPos] == "Tulip"){
+                info.setVisibility(View.VISIBLE);
+                prob.setVisibility(View.VISIBLE);
                 info.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -223,9 +233,10 @@ public class MainActivity extends AppCompatActivity {
             int dimension = Math.min(image.getWidth(), image.getHeight());
             image = ThumbnailUtils.extractThumbnail(image, dimension, dimension);
             imageView.setImageBitmap(image);
-
+            classified.setVisibility(View.VISIBLE);
             image = Bitmap.createScaledBitmap(image, imageSize, imageSize, false);
             classifyImage(image);
+
         }
         super.onActivityResult(requestCode, resultCode, data);
     }

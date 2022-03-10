@@ -87,10 +87,10 @@
         android:layout_marginTop="55dp"
         android:fontFamily="@font/baloo_bhai"
         android:text="Identified: "
+        android:visibility="invisible"
         android:textAllCaps="true"
         android:textColor="@color/white"
-        android:textSize="20sp"
-     />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/result"
@@ -140,6 +140,7 @@
         android:layout_marginBottom="45dp"
         android:background="#00000000"
         android:text="Check Probability"
+        android:visibility="invisible"
         android:textAllCaps="true"
         android:textColor="#4E60B6"
         android:textSize="15sp"
@@ -154,6 +155,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginBottom="88dp"
         android:background="#00000000"
+        android:visibility="invisible"
         android:text="More Info"
         android:textAllCaps="true"
         android:textColor="#4E60B6"
