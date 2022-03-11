@@ -5,9 +5,11 @@ import static org.checkerframework.checker.units.UnitsTools.s;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -44,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
     Button picture, prob, info;
     int imageSize = 224;
     Window window;
+
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 
     @Override
@@ -74,14 +77,13 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-
         prob.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, "Coming Soon...", Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(getApplicationContext(), ProbabilityActivity.class);
                 startActivity(i);
-                Animation animation = AnimationUtils.loadAnimation(MainActivity.this,R.anim.anim);
+                Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
                 prob.startAnimation(animation);
             }
         });
@@ -106,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Launch camera if we have permission
-                Animation animation = AnimationUtils.loadAnimation(MainActivity.this,R.anim.anim);
+                Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
                 picture.startAnimation(animation);
                 if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
                     Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -119,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void classifyImage(Bitmap image){
+    public void classifyImage(Bitmap image) {
         try {
             Model model = Model.newInstance(getApplicationContext());
 
@@ -129,13 +131,13 @@ public class MainActivity extends AppCompatActivity {
             byteBuffer.order(ByteOrder.nativeOrder());
 
             // get 1D array of 224 * 224 pixels in image
-            int [] intValues = new int[imageSize * imageSize];
+            int[] intValues = new int[imageSize * imageSize];
             image.getPixels(intValues, 0, image.getWidth(), 0, 0, image.getWidth(), image.getHeight());
 
             // iterate over pixels and extract R, G, and B values. Add to bytebuffer.
             int pixel = 0;
-            for(int i = 0; i < imageSize; i++){
-                for(int j = 0; j < imageSize; j++){
+            for (int i = 0; i < imageSize; i++) {
+                for (int j = 0; j < imageSize; j++) {
                     int val = intValues[pixel++]; // RGB
                     byteBuffer.putFloat(((val >> 16) & 0xFF) * (1.f / 255.f));
                     byteBuffer.putFloat(((val >> 8) & 0xFF) * (1.f / 255.f));
@@ -153,8 +155,8 @@ public class MainActivity extends AppCompatActivity {
             // find the index of the class with the biggest confidence.
             int maxPos = 0;
             float maxConfidence = 0;
-            for(int i = 0; i < confidences.length; i++){
-                if(confidences[i] > maxConfidence){
+            for (int i = 0; i < confidences.length; i++) {
+                if (confidences[i] > maxConfidence) {
                     maxConfidence = confidences[i];
                     maxPos = i;
                 }
@@ -164,7 +166,7 @@ public class MainActivity extends AppCompatActivity {
 
             String s = "";
 
-            if (classes[maxPos] == "Sunflower"){
+            if (classes[maxPos] == "Sunflower") {
                 info.setVisibility(View.VISIBLE);
                 prob.setVisibility(View.VISIBLE);
                 info.setOnClickListener(new View.OnClickListener() {
@@ -172,11 +174,11 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View view) {
                         Intent k = new Intent(getApplicationContext(), SunflowerActivity.class);
                         startActivity(k);
-                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this,R.anim.anim);
+                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
                         info.startAnimation(animation);
                     }
                 });
-            } else if (classes[maxPos] == "Lily"){
+            } else if (classes[maxPos] == "Lily") {
                 info.setVisibility(View.VISIBLE);
                 prob.setVisibility(View.VISIBLE);
                 info.setOnClickListener(new View.OnClickListener() {
@@ -184,11 +186,11 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View view) {
                         Intent l = new Intent(getApplicationContext(), LilyActivity.class);
                         startActivity(l);
-                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this,R.anim.anim);
+                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
                         info.startAnimation(animation);
                     }
                 });
-            } else if (classes[maxPos] == "Daisy"){
+            } else if (classes[maxPos] == "Daisy") {
                 info.setVisibility(View.VISIBLE);
                 prob.setVisibility(View.VISIBLE);
                 info.setOnClickListener(new View.OnClickListener() {
@@ -196,19 +198,19 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View view) {
                         Intent m = new Intent(getApplicationContext(), DaisyActivity.class);
                         startActivity(m);
-                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this,R.anim.anim);
+                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
                         info.startAnimation(animation);
                     }
                 });
-            }else if (classes[maxPos] == "Tulip"){
+            } else if (classes[maxPos] == "Tulip") {
                 info.setVisibility(View.VISIBLE);
                 prob.setVisibility(View.VISIBLE);
                 info.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent m = new Intent(getApplicationContext(),TulipActivity.class);
+                        Intent m = new Intent(getApplicationContext(), TulipActivity.class);
                         startActivity(m);
-                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this,R.anim.anim);
+                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
                         info.startAnimation(animation);
                     }
                 });
@@ -228,7 +230,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @Override
+
+        @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         if (requestCode == 1 && resultCode == RESULT_OK) {
             Bitmap image = (Bitmap) data.getExtras().get("data");
