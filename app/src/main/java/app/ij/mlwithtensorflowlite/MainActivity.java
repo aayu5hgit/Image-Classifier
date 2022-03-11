@@ -14,6 +14,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.media.ThumbnailUtils;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -31,6 +32,7 @@ import android.widget.Toast;
 import org.tensorflow.lite.DataType;
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.ByteBuffer;
@@ -42,9 +44,11 @@ public class MainActivity extends AppCompatActivity {
 
     TextView result, confidence, classified;
     ImageView imageView, backbtn;
-
-    Button picture, prob, info;
+    Uri uri;
+    Button prob, info;
+    ImageButton picture, importbtn;
     int imageSize = 224;
+    int SELECT_PHOTO = 1;
     Window window;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -68,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
         backbtn = findViewById(R.id.backbtn);
         info = findViewById(R.id.infobtn);
         classified = findViewById(R.id.classified);
+        importbtn = findViewById(R.id.importbtn);
 
 
         //STATUS BAR COLOR:
@@ -87,22 +92,14 @@ public class MainActivity extends AppCompatActivity {
                 prob.startAnimation(animation);
             }
         });
-//
-//        info.setOnClickListener(new View.OnClickListener() {
+
+//        backbtn.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
-//                Intent k = new Intent(getApplicationContext(), SunflowerActivity.class);
-//                startActivity(k);
+//                Intent j = new Intent(getApplicationContext(), SplashActivity.class);
+//                startActivity(j);
 //            }
 //        });
-
-        backbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent j = new Intent(getApplicationContext(), SplashActivity.class);
-                startActivity(j);
-            }
-        });
 
         picture.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,6 +116,18 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        importbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                intent.setType("image/*");
+                Toast.makeText(MainActivity.this, "Coming Soon...", Toast.LENGTH_SHORT).show();
+                startActivityIfNeeded(intent, SELECT_PHOTO);
+            }
+
+        });
+
     }
 
     public void classifyImage(Bitmap image) {
@@ -214,6 +223,8 @@ public class MainActivity extends AppCompatActivity {
                         info.startAnimation(animation);
                     }
                 });
+
+
             }
 
 //            for(int i = 0; i < classes.length; i++){
@@ -230,7 +241,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
         @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         if (requestCode == 1 && resultCode == RESULT_OK) {
@@ -241,8 +251,8 @@ public class MainActivity extends AppCompatActivity {
             classified.setVisibility(View.VISIBLE);
             image = Bitmap.createScaledBitmap(image, imageSize, imageSize, false);
             classifyImage(image);
-
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
 }
+
