@@ -39,14 +39,14 @@
 
     <TextView
         android:id="@+id/name"
-        android:layout_width="338dp"
-        android:layout_height="75dp"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
         android:fontFamily="@font/bree_serif"
         android:gravity="center"
         android:text="IMAGE CLASSIFIER"
         android:textAlignment="center"
         android:textColor="#6662DD"
-        android:textSize="40sp"
+        android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
@@ -69,7 +69,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lottie"
-        app:layout_constraintVertical_bias="0.431" />
+        app:layout_constraintVertical_bias="0.404" />
 
     <ImageButton
         android:id="@+id/start"

@@ -24,6 +24,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.tensorflow.lite.DataType;
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         //STATUS BAR COLOR:
         if (Build.VERSION.SDK_INT >= 15) {
             window = this.getWindow();
-            window.setStatusBarColor(this.getResources().getColor(R.color.slip));
+            window.setStatusBarColor(this.getResources().getColor(R.color.main));
         }
 
 
@@ -77,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
         prob.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Coming Soon...", Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(getApplicationContext(), ProbabilityActivity.class);
                 startActivity(i);
                 Animation animation = AnimationUtils.loadAnimation(MainActivity.this,R.anim.anim);
