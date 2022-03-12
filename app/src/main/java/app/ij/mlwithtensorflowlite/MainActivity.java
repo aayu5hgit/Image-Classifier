@@ -18,6 +18,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -26,8 +27,11 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import org.tensorflow.lite.DataType;
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
@@ -181,10 +185,20 @@ public class MainActivity extends AppCompatActivity {
                 info.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent k = new Intent(getApplicationContext(), SunflowerActivity.class);
-                        startActivity(k);
-                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
-                        info.startAnimation(animation);
+//                        Intent k = new Intent(getApplicationContext(), SunflowerActivity.class);
+//                        startActivity(k);
+//                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
+//                        info.startAnimation(animation);
+                        final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(
+                                MainActivity.this, R.style.BottomSheetDialogTheme
+                        );
+                        View bottomSheetView = LayoutInflater.from(getApplicationContext())
+                                .inflate(
+                                        R.layout.activity_information,
+                                        (LinearLayout)findViewById(R.id.bottomSheetContainer)
+                                );
+                        bottomSheetDialog.setContentView(bottomSheetView);
+                        bottomSheetDialog.show();
                     }
                 });
             } else if (classes[maxPos] == "Lily") {
@@ -193,10 +207,20 @@ public class MainActivity extends AppCompatActivity {
                 info.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent l = new Intent(getApplicationContext(), LilyActivity.class);
-                        startActivity(l);
-                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
-                        info.startAnimation(animation);
+//                        Intent l = new Intent(getApplicationContext(), LilyActivity.class);
+//                        startActivity(l);
+//                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
+//                        info.startAnimation(animation);
+                        final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(
+                                MainActivity.this, R.style.BottomSheetDialogTheme
+                        );
+                        View bottomSheetView = LayoutInflater.from(getApplicationContext())
+                                .inflate(
+                                        R.layout.activity_information,
+                                        (LinearLayout)findViewById(R.id.bottomSheetContainer)
+                                );
+                        bottomSheetDialog.setContentView(bottomSheetView);
+                        bottomSheetDialog.show();
                     }
                 });
             } else if (classes[maxPos] == "Daisy") {
@@ -205,10 +229,10 @@ public class MainActivity extends AppCompatActivity {
                 info.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent m = new Intent(getApplicationContext(), DaisyActivity.class);
-                        startActivity(m);
-                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
-                        info.startAnimation(animation);
+//                        Intent m = new Intent(getApplicationContext(), DaisyActivity.class);
+//                        startActivity(m);
+//                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
+//                        info.startAnimation(animation);
                     }
                 });
             } else if (classes[maxPos] == "Tulip") {
@@ -217,10 +241,10 @@ public class MainActivity extends AppCompatActivity {
                 info.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent m = new Intent(getApplicationContext(), TulipActivity.class);
-                        startActivity(m);
-                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
-                        info.startAnimation(animation);
+//                        Intent m = new Intent(getApplicationContext(), TulipActivity.class);
+//                        startActivity(m);
+//                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
+//                        info.startAnimation(animation);
                     }
                 });
 
