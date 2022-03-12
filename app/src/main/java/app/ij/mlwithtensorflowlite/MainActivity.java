@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
     TextView result, confidence, classified;
     ImageView imageView, backbtn;
     Uri uri;
-    Button prob, info;
-    ImageButton picture, importbtn;
+//    Button prob;
+    ImageButton picture, importbtn, info;
     int imageSize = 224;
     int SELECT_PHOTO = 1;
     Window window;
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         confidence = findViewById(R.id.confidence);
         imageView = findViewById(R.id.imageView);
         picture = findViewById(R.id.button);
-        prob = findViewById(R.id.probbutton);
+//        prob = findViewById(R.id.probbutton);
         backbtn = findViewById(R.id.backbtn);
         info = findViewById(R.id.infobtn);
         classified = findViewById(R.id.classified);
@@ -82,16 +82,16 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        prob.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Coming Soon...", Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(getApplicationContext(), ProbabilityActivity.class);
-                startActivity(i);
-                Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
-                prob.startAnimation(animation);
-            }
-        });
+//        prob.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(MainActivity.this, "Coming Soon...", Toast.LENGTH_SHORT).show();
+//                Intent i = new Intent(getApplicationContext(), ProbabilityActivity.class);
+//                startActivity(i);
+//                Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
+//                prob.startAnimation(animation);
+//            }
+//        });
 
 //        backbtn.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -177,7 +177,7 @@ public class MainActivity extends AppCompatActivity {
 
             if (classes[maxPos] == "Sunflower") {
                 info.setVisibility(View.VISIBLE);
-                prob.setVisibility(View.VISIBLE);
+//                prob.setVisibility(View.VISIBLE);
                 info.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -189,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
                 });
             } else if (classes[maxPos] == "Lily") {
                 info.setVisibility(View.VISIBLE);
-                prob.setVisibility(View.VISIBLE);
+//                prob.setVisibility(View.VISIBLE);
                 info.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -201,7 +201,7 @@ public class MainActivity extends AppCompatActivity {
                 });
             } else if (classes[maxPos] == "Daisy") {
                 info.setVisibility(View.VISIBLE);
-                prob.setVisibility(View.VISIBLE);
+//                prob.setVisibility(View.VISIBLE);
                 info.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -213,7 +213,7 @@ public class MainActivity extends AppCompatActivity {
                 });
             } else if (classes[maxPos] == "Tulip") {
                 info.setVisibility(View.VISIBLE);
-                prob.setVisibility(View.VISIBLE);
+//                prob.setVisibility(View.VISIBLE);
                 info.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {

@@ -28,7 +28,7 @@
         android:layout_alignEnd="@+id/imageView"
         android:layout_marginStart="2dp"
         android:layout_marginTop="160dp"
-        android:layout_marginBottom="210dp"
+        android:layout_marginBottom="310dp"
         android:layout_marginEnd="-3dp"
         app:layout_constraintBaseline_toBottomOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -54,12 +54,12 @@
 
     <ImageButton
         android:id="@+id/button"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="10dp"
-        android:layout_marginEnd="201dp"
-        android:layout_marginBottom="-2dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="15dp"
         android:layout_toStartOf="@+id/importbtn"
         android:background="#00000000"
         android:fontFamily="@font/baloo_bhai"
@@ -67,22 +67,23 @@
         android:text="Take Picture"
         android:textAllCaps="true"
         android:textColor="#E0B1F8"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <ImageButton
         android:id="@+id/importbtn"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="false"
         android:layout_marginLeft="10dp"
-        android:layout_marginBottom="-2dp"
+        android:layout_marginEnd="-20dp"
+        android:layout_marginBottom="15dp"
         android:background="#00000000"
         android:fontFamily="@font/baloo_bhai"
-        android:text="Import"
         android:src="@drawable/gallery"
+        android:text="Import"
         android:textAllCaps="true"
         android:textColor="#E0B1F8"
         android:textSize="18sp"
@@ -102,7 +103,7 @@
         android:layout_below="@+id/imageView"
         android:layout_alignParentBottom="false"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="60dp"
         android:fontFamily="@font/baloo_bhai"
         android:text="Identified: "
         android:textAllCaps="true"
@@ -120,7 +121,7 @@
         android:text=""
         android:textAllCaps="true"
         android:textColor="#3A7BAE"
-        android:textSize="24dp"
+        android:textSize="35dp"
         android:textStyle="bold" />
 
 <!--    <TextView-->
@@ -148,36 +149,32 @@
 <!--        android:textColor="#3A7BAE"-->
 <!--        android:textSize="15sp" />-->
 
-    <Button
-        android:id="@+id/probbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="37dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="45dp"
-        android:background="#00000000"
-        android:text="Check Probability"
-        android:visibility="invisible"
-        android:textAllCaps="true"
-        android:textColor="#4E60B6"
-        android:textSize="15sp"
-        android:textStyle="bold" />
+<!--    <Button-->
+<!--        android:id="@+id/probbutton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="37dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginBottom="45dp"-->
+<!--        android:background="#00000000"-->
+<!--        android:text="Check Probability"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:textColor="#4E60B6"-->
+<!--        android:textSize="15sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:visibility="invisible" />-->
 
-    <Button
+    <ImageButton
         android:id="@+id/infobtn"
         android:layout_width="wrap_content"
-        android:layout_height="37dp"
+        android:layout_height="40dp"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginLeft="10dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginBottom="33dp"
+        android:src="@drawable/info"
         android:background="#00000000"
-        android:visibility="invisible"
-        android:text="More Info"
-        android:textAllCaps="true"
-        android:textColor="#4E60B6"
-        android:textSize="15sp"
-        android:textStyle="bold" />
+        android:visibility="invisible" />
 
 </RelativeLayout>
