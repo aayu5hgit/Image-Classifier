@@ -1,9 +1,14 @@
 <resources>
     <string name="app_name">Image Classifier</string>
+    <string name="lily">LILY</string>
+<!--    <string name="lily_info">BOTANICAL NAME: Lilium-->
+<!--        HARDINESS ZONES: 4-9-->
+<!--        HEIGHT: Up to 8 feet tall-->
+<!--        EXPOSURE: Lilies love full sun, 6+ hours per day-->
+<!--        WHEN DO LILIES BLOOM? During summer</string>-->
+    <string name="lily_desc">The lily is incredible for pollinators, attracting insects with its large colorful flowers and tasteful nectar. Certain species of lily are pollinated by wind, while others are pollinated by bees!</string>
 
-    <!--    <string name="demo_content">Lorem ipsum dolor sit amet, consectetur\n adipiscing elit. Vivamus sodales faucibus\n dapibus. Etiam mattis leo quis laoreet dictum.</string>-->
-    <!--    <string name="demo_title">Lorem Ipsum</string>-->
-    <!--    <string name="next">Next</string>-->
-    <string name="messageWithLink"><a href="https://www.britannica.com/plant/sunflower-plant">More Info</a></string>
+
+<!--    <string name="messageWithLink"><a href="https://www.britannica.com/plant/sunflower-plant">More Info</a></string>-->
 
 </resources>

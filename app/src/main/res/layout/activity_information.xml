@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_bg"
+    android:orientation="vertical"
+    tools:context=".InformationActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Information"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/baloo_bhai"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lily_info"
+            app:riv_corner_radius="50dp" />
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="-80dp"
+            android:layout_marginTop="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/botanic"
+            app:riv_corner_radius="10dp" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="-80dp"
+            android:layout_marginTop="280dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/height"
+            app:riv_corner_radius="10dp" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="-80dp"
+            android:layout_marginTop="420dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sunlight"
+            app:riv_corner_radius="10dp" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="-80dp"
+            android:layout_marginTop="560dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/blooming"
+            app:riv_corner_radius="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lily"
+                android:layout_marginStart="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lily_desc"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:textColor="#E4E4E4"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Botanical Name"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lilium"
+                android:layout_marginStart="10dp"
+                android:textColor="#EAEAEA"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Height"
+                android:layout_marginTop="80dp"
+                android:layout_marginStart="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upto 8 feet tall"
+                android:layout_marginStart="10dp"
+                android:textColor="#EAEAEA"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exposure"
+                android:layout_marginTop="85dp"
+                android:layout_marginStart="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lilies love full sun, 6+ hours per day"
+                android:layout_marginStart="10dp"
+                android:textColor="#EAEAEA"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blooming Season"
+                android:layout_marginTop="85dp"
+                android:layout_marginStart="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="During Summer"
+                android:layout_marginStart="10dp"
+                android:textColor="#EAEAEA"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

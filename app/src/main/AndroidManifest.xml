@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MLWithTensorFlowLite">
         <activity
+            android:name=".InformationActivity"
+            android:exported="false" />
+        <activity
             android:name=".TulipActivity"
             android:exported="false" />
         <activity
