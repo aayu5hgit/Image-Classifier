@@ -16,14 +16,17 @@ public class InformationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information);
 
-        readmorebtn = findViewById(R.id.readmorebtn);
+        readmorebtn = (Button)findViewById(R.id.readmorebtn);
+//        readmorebtn = findViewById(R.id.readmorebtn);
         readmorebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String url = "https://www.britannica.com/plant/sunflower-plant";
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
-                startActivity(i);
+//                String url = "https://www.britannica.com/plant/sunflower-plant";
+//                Intent i = new Intent(Intent.ACTION_VIEW);
+//                i.setData(Uri.parse(url));
+//                startActivity(i);
+                Intent Getintent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.britannica.com/plant/sunflower-plant"));
+                startActivity(Getintent);
             }
         });
     }
