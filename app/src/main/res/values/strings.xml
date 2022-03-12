@@ -9,6 +9,6 @@
     <string name="lily_desc">The lily is incredible for pollinators, attracting insects with its large colorful flowers and tasteful nectar. Certain species of lily are pollinated by wind, while others are pollinated by bees!</string>
 
 
-    <string name="messageWithLink"><color><u>Read more</u><a href="https://www.britannica.com/plant/sunflower-plant"></a></color></string>
+<!--    <string name="messageWithLink"><color><u>Read more</u><a href="https://www.britannica.com/plant/sunflower-plant"></a></color></string>-->
 
 </resources>

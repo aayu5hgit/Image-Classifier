@@ -216,7 +216,7 @@ public class MainActivity extends AppCompatActivity {
                         );
                         View bottomSheetView = LayoutInflater.from(getApplicationContext())
                                 .inflate(
-                                        R.layout.activity_information,
+                                        R.layout.activity_lily,
                                         (LinearLayout)findViewById(R.id.bottomSheetContainer)
                                 );
                         bottomSheetDialog.setContentView(bottomSheetView);
@@ -233,6 +233,16 @@ public class MainActivity extends AppCompatActivity {
 //                        startActivity(m);
 //                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
 //                        info.startAnimation(animation);
+                        final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(
+                                MainActivity.this, R.style.BottomSheetDialogTheme
+                        );
+                        View bottomSheetView = LayoutInflater.from(getApplicationContext())
+                                .inflate(
+                                        R.layout.activity_daisy,
+                                        (LinearLayout)findViewById(R.id.bottomSheetContainer)
+                                );
+                        bottomSheetDialog.setContentView(bottomSheetView);
+                        bottomSheetDialog.show();
                     }
                 });
             } else if (classes[maxPos] == "Tulip") {
@@ -245,6 +255,16 @@ public class MainActivity extends AppCompatActivity {
 //                        startActivity(m);
 //                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
 //                        info.startAnimation(animation);
+                        final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(
+                                MainActivity.this, R.style.BottomSheetDialogTheme
+                        );
+                        View bottomSheetView = LayoutInflater.from(getApplicationContext())
+                                .inflate(
+                                        R.layout.activity_tulip,
+                                        (LinearLayout)findViewById(R.id.bottomSheetContainer)
+                                );
+                        bottomSheetDialog.setContentView(bottomSheetView);
+                        bottomSheetDialog.show();
                     }
                 });
 

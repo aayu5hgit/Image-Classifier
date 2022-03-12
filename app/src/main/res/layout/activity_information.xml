@@ -179,7 +179,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:backgroundTint="#9FB0F3"
-                android:text="@string/messageWithLink"
+                android:text="Read More"
                 android:textColor="#FFFFFF"/>
 
         </LinearLayout>

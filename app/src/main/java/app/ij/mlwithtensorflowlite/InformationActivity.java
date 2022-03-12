@@ -21,12 +21,12 @@ public class InformationActivity extends AppCompatActivity {
         readmorebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                String url = "https://www.britannica.com/plant/sunflower-plant";
-//                Intent i = new Intent(Intent.ACTION_VIEW);
-//                i.setData(Uri.parse(url));
-//                startActivity(i);
-                Intent Getintent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.britannica.com/plant/sunflower-plant"));
-                startActivity(Getintent);
+                String url = "https://en.wikipedia.org/wiki/Helianthus";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+//                Intent Getintent = new Intent(Intent.ACTION_VIEW,Uri.parse("https://en.wikipedia.org/wiki/Helianthus"));
+//                startActivity(Getintent);
             }
         });
     }
