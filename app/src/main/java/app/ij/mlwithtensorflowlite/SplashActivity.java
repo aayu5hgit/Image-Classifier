@@ -60,7 +60,7 @@ public class SplashActivity extends AppCompatActivity {
         intro = findViewById(R.id.lottie);
 
         fadein = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fadein);
-        name.startAnimation(fadein);
+//        name.startAnimation(fadein);
 
 //        name.animate().translationY(-1600).setDuration(1000).setStartDelay(4000);
 //        intro.animate().translationY(1400).setDuration(1000).setStartDelay(4000);

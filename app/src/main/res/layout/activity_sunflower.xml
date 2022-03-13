@@ -14,15 +14,15 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/alata"
         android:gravity="center"
-        android:padding="15dp"
-        android:text="Information"
+        android:padding="10dp"
+        android:text="About Sunflower"
         android:textSize="20sp"
         android:textStyle="bold" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#ACA9F8"
+        android:background="#F0D9FD"
         />
 
     <LinearLayout
