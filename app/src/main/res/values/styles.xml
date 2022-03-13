@@ -1,10 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<!--LILY-->
     <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
     </style>
-
     <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
         <item name="bottomSheetStyle">@android:color/transparent</item>
     </style>
+
+
+<!--SUNFLOWER-->
+     <style name="BottomSheetDialogThemeSun" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyleSun</item>
+    </style>
+    <style name="BottomSheetStyleSun" parent="Widget.Design.BottomSheet.Modal">
+        <item name="bottomSheetStyle">@android:color/transparent</item>
+    </style>
+
+
+<!--DAISY-->
+     <style name="BottomSheetDialogThemeDaisy" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyleDaisy</item>
+    </style>
+    <style name="BottomSheetStyleDaisy" parent="Widget.Design.BottomSheet.Modal">>
+        <item name="bottomSheetStyle">@android:color/transparent</item>
+    </style>
+
+
+<!--TULIP-->
+     <style name="BottomSheetDialogThemeTulip" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyleTulip</item>
+    </style>
+    <style name="BottomSheetStyleTulip" parent="Widget.Design.BottomSheet.Modal">
+        <item name="bottomSheetStyle">@android:color/transparent</item>
+    </style>
+
+
 </resources>
