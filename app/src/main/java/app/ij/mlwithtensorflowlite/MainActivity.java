@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Launch camera if we have permission
-                Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
+                Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.bounce);
                 picture.startAnimation(animation);
                 if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
                     Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -124,6 +124,7 @@ public class MainActivity extends AppCompatActivity {
         importbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.bounce);
                 Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                 intent.setType("image/*");
                 Toast.makeText(MainActivity.this, "Coming Soon...", Toast.LENGTH_SHORT).show();

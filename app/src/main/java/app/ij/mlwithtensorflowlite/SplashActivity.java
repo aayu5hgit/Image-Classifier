@@ -73,7 +73,7 @@ public class SplashActivity extends AppCompatActivity {
 //                finish();
                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(i);
-                Animation animation = AnimationUtils.loadAnimation(SplashActivity.this,R.anim.anim);
+                Animation animation = AnimationUtils.loadAnimation(SplashActivity.this,R.anim.bounce);
                 start.startAnimation(animation);
             }
         });
