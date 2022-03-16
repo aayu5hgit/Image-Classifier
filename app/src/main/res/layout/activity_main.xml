@@ -7,6 +7,18 @@
     android:background="@drawable/bgmain"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="0.5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="CAPTURE AND CLASSIFY"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
 <!--    <ImageButton-->
 <!--        android:id="@+id/backbtn"-->
 <!--        android:layout_width="45dp"-->
@@ -176,6 +188,6 @@
         android:layout_marginBottom="20dp"
         android:background="#00000000"
         android:src="@drawable/info"
-        android:visibility="invisible"/>
+        android:visibility="invisible" />
 
 </RelativeLayout>
