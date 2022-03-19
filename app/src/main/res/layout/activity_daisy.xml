@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/alata"
+        android:fontFamily="sans-serif-condensed"
         android:gravity="center"
         android:padding="10dp"
         android:text="About Daisy"
@@ -22,7 +22,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#F0D9FD"
+        android:background="#E6E6E6"
         />
 
     <LinearLayout
@@ -70,7 +70,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:fontFamily="@font/alata"
+                    android:fontFamily="sans-serif-condensed"
                     android:text="@string/daisy"
                     android:textColor="#7A869A"
                     android:textSize="15sp" />
@@ -93,7 +93,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:fontFamily="@font/alata"
+                    android:fontFamily="sans-serif-condensed"
                     android:text="Hardiness Zones\n4-8"
                     android:textColor="#7A869A"
                     android:textSize="16sp" />
@@ -118,7 +118,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:fontFamily="@font/alata"
+                    android:fontFamily="sans-serif-condensed"
                     android:text="Height\nUp to 4 to 8 inches tall"
                     android:textColor="#7A869A"
                     android:textSize="16sp" />
@@ -141,7 +141,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:fontFamily="@font/alata"
+                    android:fontFamily="sans-serif-condensed"
                     android:text="Exposure\nFull sun or partial shade, 6+ hours per day "
                     android:textColor="#7A869A"
                     android:textSize="16sp" />
@@ -167,7 +167,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:fontFamily="@font/alata"
+                    android:fontFamily="sans-serif-condensed"
                     android:text="Blooming Season:\n During spring to early summer"
                     android:textColor="#7A869A"
                     android:textSize="16sp" />
@@ -180,6 +180,7 @@
                 android:layout_gravity="center_horizontal"
                 android:backgroundTint="#9FB0F3"
                 android:text="Read More"
+                android:fontFamily="sans-serif-condensed"
                 android:textColor="#FFFFFF"/>
 
         </LinearLayout>

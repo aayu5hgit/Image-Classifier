@@ -270,7 +270,6 @@ public class MainActivity extends AppCompatActivity {
                 });
 
             }
-
 //            for(int i = 0; i < classes.length; i++){
 //                s += String.format("%s: %.1f%%\n", classes[i], confidences[i] * 100);
 //            }

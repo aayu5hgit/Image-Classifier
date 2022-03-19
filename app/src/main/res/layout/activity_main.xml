@@ -7,17 +7,30 @@
     android:background="@drawable/bgmain"
     tools:context=".MainActivity">
 
-    <TextView
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginHorizontal="0.5dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:text="CAPTURE AND CLASSIFY"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textStyle="bold" />-->
+    <com.tomer.fadingtextview.FadingTextView
+        android:id="@+id/fadingText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="0.5dp"
-        android:layout_marginTop="10dp"
-        android:gravity="center_horizontal"
-        android:text="CAPTURE AND CLASSIFY"
-        android:textColor="#FFFFFF"
+        app:texts="@array/fade"
         android:layout_centerHorizontal="true"
-        android:textSize="20dp"
-        android:textStyle="bold" />
+        android:layout_marginHorizontal="0.5dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        app:timeout="2000"/>
 
 <!--    <ImageButton-->
 <!--        android:id="@+id/backbtn"-->

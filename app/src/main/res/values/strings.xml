@@ -10,10 +10,11 @@
     <string name="tulip">Tulips are typically large, beautiful, and vibrant. They either self-pollinate or attract pollen from the wind and insects, and their bright colours attract bees.</string>
     <string name="daisy">Daisy has a rosette of spoon-shaped. The different colours and styles of flower work together in order to attract insects.</string>
     <string name="sunflower">Sunflowers are unique in that they can provide energy in the form of nourishment and vibrancy. They pollinate themselves or attract pollen from the wind and insects. It also yields thousands of seeds, which are used to make edible oil.</string>
-    <string name="title_activity_more_info_lily">MoreInfoLily</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string-array name="fade">
+    <item>📷CAPTURE</item>
+    <item>🔍CLASSIFY</item>
+    <item>✨CAPTIVATE</item>
+    </string-array>
 
     <!--    <string name="messageWithLink"><color><u>Read more</u><a href="https://www.britannica.com/plant/sunflower-plant"></a></color></string>-->
 
