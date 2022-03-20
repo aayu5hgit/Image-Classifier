@@ -18,19 +18,20 @@
 <!--        android:textColor="#FFFFFF"-->
 <!--        android:textSize="20dp"-->
 <!--        android:textStyle="bold" />-->
+
     <com.tomer.fadingtextview.FadingTextView
         android:id="@+id/fadingText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:texts="@array/fade"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="0.5dp"
         android:layout_marginTop="25dp"
-        android:textColor="@color/white"
-        android:textStyle="bold"
         android:gravity="center_horizontal"
-        android:textSize="25dp"
-        app:timeout="2000"/>
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:texts="@array/fade"
+        app:timeout="2000" />
 
 <!--    <ImageButton-->
 <!--        android:id="@+id/backbtn"-->
@@ -83,11 +84,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="10dp"
-        android:layout_marginEnd="170dp"
+        android:layout_marginEnd="160dp"
         android:layout_marginBottom="15dp"
         android:layout_toStartOf="@+id/importbtn"
         android:background="#00000000"
-        android:src="@drawable/camera"/>
+        android:src="@drawable/cam" />
 
     <ImageButton
         android:id="@+id/importbtn"
@@ -97,10 +98,10 @@
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="false"
         android:layout_marginLeft="10dp"
-        android:layout_marginEnd="-20dp"
+        android:layout_marginEnd="-15dp"
         android:layout_marginBottom="15dp"
         android:background="#00000000"
-        android:src="@drawable/gallery"/>
+        android:src="@drawable/gall" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -198,9 +199,9 @@
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginLeft="10dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="34dp"
         android:background="#00000000"
         android:src="@drawable/info"
-        android:visibility="invisible" />
+        android:visibility="invisible"/>
 
 </RelativeLayout>
