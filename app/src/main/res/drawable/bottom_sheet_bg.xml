@@ -4,11 +4,11 @@
         />
 
 
-<!--    <gradient-->
-<!--        android:startColor="#B0B3FB"-->
-<!--        android:endColor="#F0AEF8"-->
-<!--        android:angle="90"-->
-<!--        />-->
+    <gradient
+        android:startColor="#BCBEFB"
+        android:endColor="#F8C9FD"
+        android:angle="90"
+        />
 
     <padding
         android:left="10dp"
