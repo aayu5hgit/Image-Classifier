@@ -175,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
                     maxPos = i;
                 }
             }
-            String[] classes = {"Sunflower", "Tulip", "Daisy", "Lily"};
+            String[] classes = {"Sunflower", "Lily", "Daisy", "Rose", "Snowdrop", "Bluebell", "Daffodil", "Dandelion"};
             result.setText(classes[maxPos]);
 
             String s = "";
