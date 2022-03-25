@@ -269,6 +269,29 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
+            }else if (classes[maxPos] == "Rose") {
+                info.setVisibility(View.VISIBLE);
+//                prob.setVisibility(View.VISIBLE);
+                info.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+//                        Intent m = new Intent(getApplicationContext(), TulipActivity.class);
+//                        startActivity(m);
+//                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
+//                        info.startAnimation(animation);
+                        final BottomSheetDialog bottomSheetDialogR = new BottomSheetDialog(
+                                MainActivity.this, R.style.BottomSheetDialogThemeRose
+                        );
+                        View bottomSheetView = LayoutInflater.from(getApplicationContext())
+                                .inflate(
+                                        R.layout.activity_rose,
+                                        (LinearLayout)findViewById(R.id.bottomSheetRose)
+                                );
+                        bottomSheetDialogR.setContentView(bottomSheetView);
+                        bottomSheetDialogR.show();
+                    }
+                });
+
             }
 //            for(int i = 0; i < classes.length; i++){
 //                s += String.format("%s: %.1f%%\n", classes[i], confidences[i] * 100);

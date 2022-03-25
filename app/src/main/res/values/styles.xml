@@ -35,5 +35,13 @@
         <item name="bottomSheetStyle">@android:color/transparent</item>
     </style>
 
+<!--ROSE-->
+     <style name="BottomSheetDialogThemeRose" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyleRose</item>
+    </style>
+    <style name="BottomSheetStyleRose" parent="Widget.Design.BottomSheet.Modal">
+        <item name="bottomSheetStyle">@android:color/transparent</item>
+    </style>
+
 
 </resources>

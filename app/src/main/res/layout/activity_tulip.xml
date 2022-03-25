@@ -94,7 +94,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
                     android:fontFamily="@font/alata"
-                    android:text="Hardiness Zones\n3 - 8"
+                    android:text="Scientific Name\nTulipa"
                     android:textColor="#7A869A"
                     android:textSize="16sp" />
             </LinearLayout>

@@ -94,7 +94,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
                     android:fontFamily="@font/alata"
-                    android:text="Hardiness Zones\n4-9"
+                    android:text="Scientific Name\nHelianthus Annuus"
                     android:textColor="#7A869A"
                     android:textSize="16sp" />
             </LinearLayout>
