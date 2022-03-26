@@ -43,5 +43,13 @@
         <item name="bottomSheetStyle">@android:color/transparent</item>
     </style>
 
+<!--BLUEBELL-->
+     <style name="BottomSheetDialogThemeBluebell" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyleBluebell</item>
+    </style>
+    <style name="BottomSheetStyleBluebell" parent="Widget.Design.BottomSheet.Modal">
+        <item name="bottomSheetStyle">@android:color/transparent</item>
+    </style>
+
 
 </resources>

@@ -292,7 +292,31 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
+            } else if (classes[maxPos] == "Bluebell") {
+                info.setVisibility(View.VISIBLE);
+//                prob.setVisibility(View.VISIBLE);
+                info.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+//                        Intent m = new Intent(getApplicationContext(), TulipActivity.class);
+//                        startActivity(m);
+//                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
+//                        info.startAnimation(animation);
+                        final BottomSheetDialog bottomSheetDialogB = new BottomSheetDialog(
+                                MainActivity.this, R.style.BottomSheetDialogThemeBluebell
+                        );
+                        View bottomSheetView = LayoutInflater.from(getApplicationContext())
+                                .inflate(
+                                        R.layout.activity_bluebell,
+                                        (LinearLayout)findViewById(R.id.bottomSheetBluebell)
+                                );
+                        bottomSheetDialogB.setContentView(bottomSheetView);
+                        bottomSheetDialogB.show();
+                    }
+                });
+
             }
+
 //            for(int i = 0; i < classes.length; i++){
 //                s += String.format("%s: %.1f%%\n", classes[i], confidences[i] * 100);
 //            }
