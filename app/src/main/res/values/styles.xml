@@ -51,5 +51,13 @@
         <item name="bottomSheetStyle">@android:color/transparent</item>
     </style>
 
+<!--DAFFODIL-->
+     <style name="BottomSheetDialogThemeDaffodil" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyleDaffodil</item>
+    </style>
+    <style name="BottomSheetStyleDaffodil" parent="Widget.Design.BottomSheet.Modal">
+        <item name="bottomSheetStyle">@android:color/transparent</item>
+    </style>
+
 
 </resources>
