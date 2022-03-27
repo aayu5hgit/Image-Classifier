@@ -8,6 +8,8 @@
     <string name="rose">Roses are multi-petal flowers. Some varieties are known for their prickles along the stems of the plant, which are used to deter predators. Many species are now cultivated although there are still varieties that grow in the wild.</string>
     <string name="bluebell">Enchanting and iconic, bluebells are a favourite with the fairies and a sure sign spring is in full swing. The violet glow of a bluebell wood is an incredible wildflower spectacle.</string>
     <string name="daffodil">Daffodils are easy and reliable spring-flowering bulbs. They multiply quickly and return to bloom again each spring, year after year. They are not fussy about soil. Yellow is the most common color for daffodils</string>
+    <string name="dandelion">Dandelion flowers open with the sun in the morning and close in the evening or during gloomy weather. The dark brown roots are fleshy and brittle and are filled with a white milky substance that is bitter and slightly smelly.</string>
+
 
     <string-array name="fade">
         <item>CAPTURE</item>

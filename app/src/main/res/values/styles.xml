@@ -59,5 +59,13 @@
         <item name="bottomSheetStyle">@android:color/transparent</item>
     </style>
 
+<!--DANDELION-->
+     <style name="BottomSheetDialogThemeDandelion" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyleDandelion</item>
+    </style>
+    <style name="BottomSheetStyleDandelion" parent="Widget.Design.BottomSheet.Modal">
+        <item name="bottomSheetStyle">@android:color/transparent</item>
+    </style>
+
 
 </resources>

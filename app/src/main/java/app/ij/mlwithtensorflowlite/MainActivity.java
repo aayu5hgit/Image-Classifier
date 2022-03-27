@@ -275,10 +275,6 @@ public class MainActivity extends AppCompatActivity {
                 info.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-//                        Intent m = new Intent(getApplicationContext(), TulipActivity.class);
-//                        startActivity(m);
-//                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
-//                        info.startAnimation(animation);
                         final BottomSheetDialog bottomSheetDialogR = new BottomSheetDialog(
                                 MainActivity.this, R.style.BottomSheetDialogThemeRose
                         );
@@ -298,10 +294,6 @@ public class MainActivity extends AppCompatActivity {
                 info.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-//                        Intent m = new Intent(getApplicationContext(), TulipActivity.class);
-//                        startActivity(m);
-//                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
-//                        info.startAnimation(animation);
                         final BottomSheetDialog bottomSheetDialogB = new BottomSheetDialog(
                                 MainActivity.this, R.style.BottomSheetDialogThemeBluebell
                         );
@@ -321,10 +313,6 @@ public class MainActivity extends AppCompatActivity {
                 info.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-//                        Intent m = new Intent(getApplicationContext(), TulipActivity.class);
-//                        startActivity(m);
-//                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.anim);
-//                        info.startAnimation(animation);
                         final BottomSheetDialog bottomSheetDialogDA = new BottomSheetDialog(
                                 MainActivity.this, R.style.BottomSheetDialogThemeDaffodil
                         );
@@ -335,6 +323,25 @@ public class MainActivity extends AppCompatActivity {
                                 );
                         bottomSheetDialogDA.setContentView(bottomSheetView);
                         bottomSheetDialogDA.show();
+                    }
+                });
+
+            } else if (classes[maxPos] == "Dandelion") {
+                info.setVisibility(View.VISIBLE);
+//                prob.setVisibility(View.VISIBLE);
+                info.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        final BottomSheetDialog bottomSheetDialogDAN = new BottomSheetDialog(
+                                MainActivity.this, R.style.BottomSheetDialogThemeDandelion
+                        );
+                        View bottomSheetView = LayoutInflater.from(getApplicationContext())
+                                .inflate(
+                                        R.layout.activity_dandelion,
+                                        (LinearLayout)findViewById(R.id.bottomSheetDandelion)
+                                );
+                        bottomSheetDialogDAN.setContentView(bottomSheetView);
+                        bottomSheetDialogDAN.show();
                     }
                 });
 

@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MLWithTensorFlowLite">
         <activity
+            android:name=".DandelionActivity"
+            android:exported="false" />
+        <activity
             android:name=".DaffodilActivity"
             android:exported="false" />
         <activity
