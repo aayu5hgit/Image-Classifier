@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/alata"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
         android:gravity="center"
         android:padding="10dp"
         android:text="About Bluebell"
@@ -70,7 +70,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:fontFamily="@font/alata"
+                    android:fontFamily="@font/amiko_semibold"
                     android:text="@string/bluebell"
                     android:textColor="#7A869A"
                     android:textSize="15sp" />
@@ -93,7 +93,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:fontFamily="@font/alata"
+                    android:fontFamily="@font/amiko_semibold"
                     android:text="Scientific Name\nHyacinthoides non-scripta"
                     android:textColor="#7A869A"
                     android:textSize="16sp" />
@@ -118,7 +118,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:fontFamily="@font/alata"
+                    android:fontFamily="@font/amiko_semibold"
                     android:text="Height\n3 to 4 feet tall"
                     android:textColor="#7A869A"
                     android:textSize="16sp" />
@@ -141,7 +141,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:fontFamily="@font/alata"
+                    android:fontFamily="@font/amiko_semibold"
                     android:text="Exposure\nEither sun or partial shade"
                     android:textColor="#7A869A"
                     android:textSize="16sp" />
@@ -167,7 +167,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="0dp"
-                    android:fontFamily="@font/alata"
+                    android:fontFamily="@font/amiko_semibold"
                     android:text="Blooming Season\nDuring mid-April to late May"
                     android:textColor="#7A869A"
                     android:textSize="16sp" />
