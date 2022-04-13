@@ -24,18 +24,18 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie"
-        android:layout_width="372dp"
-        android:layout_height="251dp"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
         app:layout_constraintBaseline_toBottomOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.127"
+        app:layout_constraintVertical_bias="0.299"
         app:lottie_autoPlay="true"
-        app:lottie_repeatCount="1500"
-        app:lottie_rawRes="@raw/phonegif" />
+        app:lottie_rawRes="@raw/leafgif"
+        app:lottie_repeatCount="1500" />
 
     <TextView
         android:id="@+id/name"
@@ -49,10 +49,10 @@
         android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lottie"
-        app:layout_constraintVertical_bias="0.247" />
+        app:layout_constraintVertical_bias="0.179" />
 
     <TextView
         android:id="@+id/slogan"
@@ -62,14 +62,13 @@
         android:gravity="center"
         android:text="Explore The Beauty Of Nature!"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="#777777"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lottie"
-        app:layout_constraintVertical_bias="0.404" />
+        app:layout_constraintVertical_bias="0.369" />
 
     <ImageButton
         android:id="@+id/start"
@@ -103,7 +102,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lottie"
-        app:layout_constraintVertical_bias="0.77" />
+        app:layout_constraintVertical_bias="0.746" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
