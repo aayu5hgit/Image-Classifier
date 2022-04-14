@@ -27,7 +27,7 @@
         android:layout_marginHorizontal="0.5dp"
         android:layout_marginTop="25dp"
         android:gravity="center_horizontal"
-        android:textColor="#FFFFFF"
+        android:textColor="#B5B5B5"
         android:textSize="24dp"
         android:textStyle="bold"
         app:texts="@array/fade"

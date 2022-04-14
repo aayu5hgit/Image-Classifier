@@ -54,7 +54,7 @@ public class SplashActivity extends AppCompatActivity {
         //STATUS BAR COLOR:
         if (Build.VERSION.SDK_INT >= 15) {
             window = this.getWindow();
-            window.setStatusBarColor(this.getResources().getColor(R.color.main));
+            window.setStatusBarColor(this.getResources().getColor(R.color.white));
         }
         name = findViewById(R.id.name);
         intro = findViewById(R.id.lottie);

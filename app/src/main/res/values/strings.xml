@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Image Classifier</string>
+    <string name="app_name">Plantify</string>
     <string name="lily">LILY</string>
     <string name="lily_desc">The lily is incredible for pollinators, attracting insects with its large colorful flowers and tasteful nectar. Certain species of lily are pollinated by wind, while others are pollinated by bees!</string>
     <string name="tulip">Tulips are typically large, beautiful, and vibrant. They either self-pollinate or attract pollen from the wind and insects, and their bright colours attract bees.</string>
