@@ -118,7 +118,7 @@
         android:layout_alignParentBottom="false"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
-        android:fontFamily="@font/baloo_bhai"
+        android:fontFamily="@font/bree_serif"
         android:text="Identified: "
         android:textAllCaps="true"
         android:textColor="@color/white"
@@ -132,9 +132,10 @@
         android:layout_below="@+id/classified"
         android:layout_alignParentBottom="false"
         android:layout_centerHorizontal="true"
+        android:fontFamily="@font/days_one"
         android:text=""
         android:textAllCaps="true"
-        android:textColor="#3A7BAE"
+        android:textColor="#2BB767"
         android:textSize="40dp"
         android:textStyle="bold" />
 
