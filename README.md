@@ -1,4 +1,4 @@
-# Image-Classifier
+# PLANTIFY
 <!-- <h5>Screenshots:</h5> -->
 <p align="center">
   <a align="left" href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?&font=IBM+Plex+Sans&color=D2B4DE&size=30&lines=PLANTIFY;Capture+And+Classify" /></a>
